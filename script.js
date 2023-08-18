@@ -38,7 +38,7 @@ module.exports = {
     let sum = 0;
     for (const key in obj) {
       if (typeof obj[key] === "object") {
-        sum += this.sumEvenObj(obj[key]);
+        sum += module.exports.sumEvenObj(obj[key]);
       } else if (typeof obj[key] === "number" && obj[key] % 2 === 0) {
         sum += obj[key];
       }
